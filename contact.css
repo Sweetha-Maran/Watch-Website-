@@ -1,0 +1,244 @@
+   * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-image: url('./images/21.webp');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      overflow-x: hidden;
+      padding: 40px;
+      color: #333;
+      position: relative;
+    }
+
+   
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(255,255,255,0.2);
+      z-index: -1;
+    }
+
+    .contact-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+      max-width: 1200px;
+      margin: 100px auto 40px auto;
+    }
+
+    .contact-form, .contact-info {
+      flex: 1 1 300px;
+      min-width: 280px;
+    }
+
+    .contact-form h2 {
+      font-size: 2.2rem;
+      margin-bottom: 20px;
+    }
+
+    .contact-form label {
+      display: none; 
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      font-size: 1rem;
+      outline: none;
+    }
+
+    .contact-form button {
+      background: #000;
+      color: #fff;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      transition: 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background: #333;
+    }
+
+    .contact-info h3 {
+      font-size: 1.7rem;
+      margin-bottom: 20px;
+    }
+
+    .info-item {
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .info-item i {
+      color: #000;
+      font-size: 1.2rem;
+    }
+
+    .success-msg {
+      opacity: 0;
+      color: green;
+      margin-top: 10px;
+      transition: opacity 0.5s ease-in-out;
+    }
+
+    .success-msg.show {
+      opacity: 1;
+    }
+     /* footer */
+    
+    footer {
+      background-color: #111;
+      color: #ddd;
+      padding: 40px 20px;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: auto;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    .footer-col {
+      flex: 1 1 220px;
+      margin: 20px;
+    }
+
+    .footer-col h4 {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #fff;
+      position: relative;
+    }
+
+    .footer-col h4::after {
+      content: '';
+      position: absolute;
+      width: 40px;
+      height: 2px;
+      background: #f39c12;
+      left: 0;
+      bottom: -5px;
+    }
+
+    .footer-col ul {
+      list-style: none;
+    }
+
+    .footer-col ul li {
+      margin: 10px 0;
+    }
+
+    .footer-col ul li a {
+      color: #bbb;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .footer-col ul li a:hover {
+      color: #fff;
+      padding-left: 5px;
+    }
+
+    .social-links a {
+      color: #bbb;
+      font-size: 18px;
+      margin-right: 15px;
+      transition: 0.3s;
+    }
+
+    .social-links a:hover {
+      color: #fff;
+    }
+
+    .footer-bottom {
+      text-align: center;
+      padding-top: 20px;
+      font-size: 14px;
+      color: #aaa;
+      border-top: 1px solid #333;
+      margin-top: 30px;
+    }
+
+    /* Responsive */
+  @media (max-width: 430px) {
+  body {
+    padding: 10px;
+  }
+
+  .contact-container {
+    padding: 20px;
+    margin-top: 60px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .contact-form h2,
+  .contact-info h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.95rem;
+    padding: 10px 12px;
+  }
+
+  .contact-form button {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    font-size: 1rem;
+    padding: 12px;
+  }
+
+  .info-item {
+    font-size: 0.95rem;
+    gap: 10px;
+    align-items: flex-start;
+  }
+
+  .info-item i {
+    font-size: 1rem;
+    margin-top: 3px;
+  }
+  .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .footer-col {
+        margin: 10px 0;
+      }
+
+      .social-links {
+        margin-top: 10px;
+      }
+}

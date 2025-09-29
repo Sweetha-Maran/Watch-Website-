@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch Cart with Background Blur</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./women.css">
+</head>
+<body>
+
+  <!-- Hero Header Section -->
+  <header class="hero-header">
+   
+  </header>
+
+  <!-- Product Section -->
+  <section class="product-section" id="productSection">
+    <div class="product-card">
+      <img src="./images/50.jpg" alt="Maxima GOLD">
+      <h4>Maxima GOLD</h4>
+      <p>Rs. 1439</p>
+      <button onclick="addToCart('Maxima GOLD', 1439, './images/13.webp')">Add to Cart</button>
+       <a href="buy.html">  <button class="buy-now" onclick="buyNow('Maxima GOLD', 1439, './images/13.webp')">Buy Now</button></a> 
+    </div>
+
+    <div class="product-card">
+      <img src="./images/51.jpg" alt="Maxima ATTIVO">
+      <h4>Maxima ATTIVO</h4>
+      <p>Rs. 2048</p>
+      <button onclick="addToCart('Maxima ATTIVO', 2048, './images/16.jpg')">Add to Cart</button>
+       <a href="buy.html">  <button class="buy-now" onclick="buyNow('Maxima GOLD', 1439, './images/13.webp')">Buy Now</button></a> 
+    </div>
+
+    <div class="product-card">
+      <img src="./images/52.webp" alt="Maxima ATTIVO">
+      <h4>Titan EDGE</h4>
+      <p>Rs. 3540</p>
+      <button onclick="addToCart('Titan EDGE', 3540, './images/17.jpg')">Add to Cart</button>
+       <a href="buy.html">  <button class="buy-now" onclick="buyNow('Maxima GOLD', 1439, './images/13.webp')">Buy Now</button></a> 
+    </div>
+
+    <div class="product-card">
+      <img src="./images/53.webp" alt="Maxima ATTIVO">
+      <h4>Casio G-Shock</h4>
+      <p>Rs. 5899</p>
+      <button onclick="addToCart('Casio G-Shock', 5899, './images/18.jpg')">Add to Cart</button>
+       <a href="buy.html">  <button class="buy-now" onclick="buyNow('Maxima GOLD', 1439, './images/13.webp')">Buy Now</button></a> 
+    </div>
+
+    <div class="product-card">
+       <img src="./images/54.jpg" alt="Maxima ATTIVO">
+      <h4>Fastrack Bolt</h4>
+      <p>Rs. 2999</p>
+      <button onclick="addToCart('Fastrack Bolt', 2999, './images/19.jpg')">Add to Cart</button>
+       <a href="buy.html">  <button class="buy-now" onclick="buyNow('Maxima GOLD', 1439, './images/13.webp')">Buy Now</button></a> 
+    </div>
+
+    <div class="product-card">
+      <img src="./images/60.webp" alt="Maxima ATTIVO">
+      <h4>Sonata Steel</h4>
+      <p>Rs. 1890</p>
+      <button onclick="addToCart('Sonata Steel', 1890, './images/20.jpg')">Add to Cart</button>
+       <a href="buy.html">  <button class="buy-now" onclick="buyNow('Maxima GOLD', 1439, './images/13.webp')">Buy Now</button></a> 
+    </div>
+
+    <div class="product-card">
+      <img src="./images/56.webp" alt="Maxima ATTIVO">
+      <h4>Timex Urban</h4>
+      <p>Rs. 2390</p>
+      <button onclick="addToCart('Timex Urban', 2390, './images/21.jpg')">Add to Cart</button>
+       <a href="buy.html">  <button class="buy-now" onclick="buyNow('Maxima GOLD', 1439, './images/13.webp')">Buy Now</button></a> 
+    </div>
+
+    <div class="product-card">
+      <img src="./images/57.webp" alt="Maxima ATTIVO">
+      <h4>Fossil Hybrid</h4>
+      <p>Rs. 4699</p>
+      <button onclick="addToCart('Fossil Hybrid', 4699, './images/22.jpg')">Add to Cart</button>
+       <a href="buy.html">  <button class="buy-now" onclick="buyNow('Maxima GOLD', 1439, './images/13.webp')">Buy Now</button></a> 
+    </div>
+     <div class="product-card">
+      <img src="./images/59.jpg" alt="Maxima ATTIVO">
+      <h4>Fossil Hybrid</h4>
+      <p>Rs. 4699</p>
+      <button onclick="addToCart('Fossil Hybrid', 4699, './images/22.jpg')">Add to Cart</button>
+       <a href="buy.html">  <button class="buy-now" onclick="buyNow('Maxima GOLD', 1439, './images/13.webp')">Buy Now</button></a> 
+    </div>
+  </section>
+
+  <!-- Cart Overlay -->
+  <div class="cart-overlay" id="cartOverlay">
+    <div class="cart-box">
+      <i class="fas fa-times close-cart" onclick="closeCart()"></i>
+      <h2>Your Order</h2>
+      <div id="cartItemsContainer"></div>
+    </div>
+  </div>
+
+  <!-- footer -->
+   <!-- Footer Section -->
+  <footer>
+    <div class="footer-container">
+      <!-- Company Info -->
+      <div class="footer-col">
+        <h4>Watch World</h4>
+        <p>Explore premium collections of stylish timepieces for men and women.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="men.html">Men's Watches</a></li>
+          <li><a href="women.html">Women's Watches</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Watch World. All Rights Reserved.
+    </div>
+  </footer>
+<script src="./women.js"></script>
+</body>
+</html>

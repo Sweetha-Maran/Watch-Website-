@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy Now - Watch World</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('./images/69.webp') no-repeat center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      backdrop-filter: blur(4px);
+    }
+
+    .buy-now-container {
+      background: rgba(255, 255, 255, 0.9);
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      width: 350px;
+      animation: fadeIn 0.5s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(20px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+
+    .buy-now-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .buy-now-container label {
+      font-weight: bold;
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .buy-now-container input, 
+    .buy-now-container select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      outline: none;
+    }
+
+    .buy-now-container button {
+      width: 100%;
+      padding: 12px;
+      background: #333;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .buy-now-container button:hover {
+      background: #ff6600;
+    }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      color: green;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    @media (max-width: 430px) {
+      .buy-now-container {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="buy-now-container">
+    <h2><i class="fas fa-shopping-cart"></i> Buy Now</h2>
+    <form id="buyNowForm">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="address">Address</label>
+      <input type="text" id="address" placeholder="Enter your address" required>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" min="1" value="1" required>
+
+      <label for="payment">Payment Method</label>
+      <select id="payment" required>
+        <option value="">Select</option>
+        <option value="cod">Cash on Delivery</option>
+        <option value="card">Credit/Debit Card</option>
+        <option value="upi">UPI</option>
+      </select>
+
+      <button type="submit">Confirm Purchase</button>
+    </form>
+    <div class="success-message" id="successMessage">
+      ✅ Order Placed Successfully!
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('buyNowForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      document.getElementById('successMessage').style.display = 'block';
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>

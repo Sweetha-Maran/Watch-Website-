@@ -1,0 +1,56 @@
+
+.side-cart {
+  width: 300px;
+  background: #fff;
+  border-left: 2px solid #ccc;
+  position: fixed;
+  top: 0;
+  right: -300px;
+  height: 100%;
+  padding: 10px;
+  transition: 0.3s;
+}
+.side-cart.open {
+  right: 0;
+}
+
+.buy-now-btn {
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  background: #28a745;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.form-container {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container.show {
+  display: flex;
+}
+
+.form-box {
+  background: #fff;
+  padding: 20px;
+  width: 300px;
+  border-radius: 10px;
+}
+.form-box input,
+.form-box textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+}

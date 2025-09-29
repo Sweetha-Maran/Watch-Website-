@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css">
+</head>
+<body>
+    <div id="sideCart" class="side-cart">
+  <h3>Your Cart</h3>
+  <div id="cartItems"></div>
+  <button id="buyNowBtn" class="buy-now-btn">Buy Now</button>
+</div>
+
+
+<div id="buyFormContainer" class="form-container">
+  <div class="form-box">
+    <h3>Checkout Form</h3>
+    <form id="checkoutForm">
+      <label>Name:</label>
+      <input type="text" name="name" required><br>
+      <label>Email:</label>
+      <input type="email" name="email" required><br>
+      <label>Address:</label>
+      <textarea name="address" required></textarea><br>
+      <button type="submit">Submit</button>
+      <button type="button" onclick="closeForm()">Cancel</button>
+    </form>
+  </div>
+</div>
+<script src="./form.js"></script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(./images/72.jpg);
+    background-size: cover;
+}
+.cart-container {
+  display: flex;
+  flex-direction: column;      
+  justify-content: center;
+  align-items: center;
+  height: 100vh;             
+  text-align: center;
+}
+
+.cart-container i {
+  font-size: 270px;
+  color: #F8F4E1;
+  margin-bottom: 20px;
+}
+
+.cart-container p {
+  font-size: 50px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.cart-container button {
+  background: #000;
+  color: #f0e9e9;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}

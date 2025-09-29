@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Watch World - Collections</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="./collection.css">
+</head>
+<body>
+
+  <h1 style="color: white;">Our Best Collections</h1>
+
+  <!-- Men Collection -->
+  <div class="section-title" style="color: white;">Men Collections</div>
+  <div class="collection-section">
+    <div class="watch-card">
+      <img src="./images/30.avif" alt="Men Watch 1">
+      <h5>Classic Chrono</h5>
+      <p>Brand: Titan</p>
+      <button onclick="addToCart('Titan', 'Classic Chrono')">Add to Cart</button>
+    </div>
+
+    <div class="watch-card">
+      <img src="./images/32.avif" alt="Men Watch 2">
+      <h5>Black Beast</h5>
+      <p>Brand: Fossil</p>
+      <button onclick="addToCart('Fossil', 'Black Beast')">Add to Cart</button>
+    </div>
+
+    <div class="watch-card">
+      <img src="./images/33.avif" alt="Men Watch 3">
+      <h5>Urban Leather</h5>
+      <p>Brand: Casio</p>
+      <button onclick="addToCart('Casio', 'Urban Leather')">Add to Cart</button>
+    </div>
+    <div class="watch-card">
+      <img src="./images/28.jpg" alt="Men Watch 3">
+      <h5>Urban Leather</h5>
+      <p>Brand: Casio</p>
+      <button onclick="addToCart('Casio', 'Urban Leather')">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- Women Collection -->
+  <div class="section-title" style="color: white;">Women Collections</div>
+  <div class="collection-section">
+    <div class="watch-card">
+      <img src="./images/50.jpg" alt="Women Watch 1">
+      <h5>Rose Gold Elegance</h5>
+      <p>Brand: Titan Raga</p>
+      <button onclick="addToCart('Titan Raga', 'Rose Gold Elegance')">Add to Cart</button>
+    </div>
+
+    <div class="watch-card">
+      <img src="./images/51.jpg" alt="Women Watch 2">
+      <h5>Crystal Chic</h5>
+      <p>Brand: Fastrack</p>
+      <button onclick="addToCart('Fastrack', 'Crystal Chic')">Add to Cart</button>
+    </div>
+
+    <div class="watch-card">
+      <img src="./images/52.webp" alt="Women Watch 3">
+      <h5>Silver Pearl</h5>
+      <p>Brand: Timex</p>
+      <button onclick="addToCart('Timex', 'Silver Pearl')">Add to Cart</button>
+    </div>
+     <div class="watch-card">
+      <img src="./images/50.jpg" alt="Women Watch 3">
+      <h5>Silver Pearl</h5>
+      <p>Brand: Timex</p>
+      <button onclick="addToCart('Timex', 'Silver Pearl')">Add to Cart</button>
+    </div>
+  </div>
+
+  <!-- couple watch Collection -->
+  <div class="section-title"style="color: white;">Couples Watch Collection</div>
+  <div class="collection-section">
+    <div class="watch-card">
+      <img src="./images/38.webp" alt="Women Watch 1">
+      <h5>Rose Gold Elegance</h5>
+      <p>Brand: Titan Raga</p>
+      <button onclick="addToCart('Titan Raga', 'Rose Gold Elegance')">Add to Cart</button>
+    </div>
+
+    <div class="watch-card">
+      <img src="./images/35.webp" alt="Women Watch 2">
+      <h5>Crystal Chic</h5>
+      <p>Brand: Fastrack</p>
+      <button onclick="addToCart('Fastrack', 'Crystal Chic')">Add to Cart</button>
+    </div>
+
+    <div class="watch-card">
+      <img src="./images/53.webp" alt="Women Watch 3">
+      <h5>Silver Pearl</h5>
+      <p>Brand: Timex</p>
+      <button onclick="addToCart('Timex', 'Silver Pearl')">Add to Cart</button>
+    </div>
+     <div class="watch-card">
+      <img src="./images/54.jpg" alt="Women Watch 3">
+      <h5>Silver Pearl</h5>
+      <p>Brand: Timex</p>
+      <button onclick="addToCart('Timex', 'Silver Pearl')">Add to Cart</button>
+    </div>
+  </div>
+  <!-- Side Cart -->
+  <div class="side-cart" id="sideCart">
+    <h3>
+      Your Cart
+      <i class="bi bi-x-lg" onclick="toggleCart()"></i>
+    </h3>
+    <div id="cartItems"></div>
+  </div>
+   <!-- footer -->
+  
+  <footer>
+    <div class="footer-container">
+    
+      <div class="footer-col">
+        <h4>Watch World</h4>
+        <p>Explore premium collections of stylish timepieces for men and women.</p>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="men.html">Men's Watches</a></li>
+          <li><a href="women.html">Women's Watches</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Support -->
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Order Status</a></li>
+          <li><a href="#">Shipping & Returns</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Use</a></li>
+        </ul>
+      </div>
+
+      <!-- Follow Us -->
+      <div class="footer-col">
+        <h4>Follow Us</h4>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Watch World. All Rights Reserved.
+    </div>
+  </footer>
+
+  <script src="./collection.js"></script>
+
+</body>
+</html>
